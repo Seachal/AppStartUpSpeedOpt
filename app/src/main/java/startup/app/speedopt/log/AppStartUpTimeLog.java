@@ -17,7 +17,9 @@ public class AppStartUpTimeLog {
 
     private static long mLastTime = 0;
     private static long mFirstTime = 0;
+//    sca:首次启动标记
     private static String mFirstMarkStr = "";
+//    sca:冷启动标记
     private static String mColdStartTag = "";
 
     public static ArrayList<TimeNoteData> mTimeNoteDataArrayList = new ArrayList<TimeNoteData>();
@@ -93,10 +95,15 @@ public class AppStartUpTimeLog {
         }
     }
 
+    /**
+     * 直接在这个类中打印 log。
+     */
     private static void printLog() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(mColdStartTag);
 
+//        501 是与上节点的时间差，  702 是与与开始节点的总时间差 */
+//          [App onCreate end] (501，702) -->
         for (TimeNoteData timeNoteData : mTimeNoteDataArrayList) {
             stringBuilder.append("[" + timeNoteData.tag + "] (" + timeNoteData.timeDiff + "，" + timeNoteData.totalTime + ")");
             stringBuilder.append(" --> \n");

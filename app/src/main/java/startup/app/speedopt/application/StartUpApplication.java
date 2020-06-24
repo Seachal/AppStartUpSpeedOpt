@@ -3,7 +3,6 @@ package startup.app.speedopt.application;
 import android.app.Application;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.os.SystemClock;
 
 import startup.app.speedopt.log.AppLog;
 import startup.app.speedopt.log.AppStartUpTimeLog;
@@ -17,7 +16,7 @@ public class StartUpApplication extends Application {
 
     @Override
     public void onCreate() {
-        // 程序创建时调用，次方法应该执行应该尽量快，否则会拖慢整个app的启动速度
+        // 程序创建时调用，此方法应该执行应该尽量快，否则会拖慢整个app的启动速度
         super.onCreate();
         onSyncLoadForCreate();
     }
@@ -48,7 +47,13 @@ public class StartUpApplication extends Application {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                // 异步加载逻辑
+                // 异步加载逻辑, sca: 模拟异步加载方式耗时
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
             }
         }, "ApplicationAsyncLoad").start();
     }

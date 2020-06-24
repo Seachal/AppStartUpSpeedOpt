@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android.AppStartUpSpeedOpt.iml" filepath="$PROJECT_DIR$/.idea/modules/Android.AppStartUpSpeedOpt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android-AppStartUpSpeedOpt.iml" filepath="$PROJECT_DIR$/.idea/modules/Android-AppStartUpSpeedOpt.iml" group="AppStartUpSpeedOpt" />
       <module fileurl="file://$PROJECT_DIR$/AppStartUpSpeedOpt.iml" filepath="$PROJECT_DIR$/AppStartUpSpeedOpt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppStartUpSpeedOpt.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppStartUpSpeedOpt.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AppStartUpSpeedOpt-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AppStartUpSpeedOpt-app.iml" group="AppStartUpSpeedOpt/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

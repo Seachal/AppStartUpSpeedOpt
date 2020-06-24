@@ -7,7 +7,7 @@ package startup.app.speedopt.utils;
 public class BlockingUtil {
 
     /**
-     * 模拟阻塞
+     * 模拟阻塞 , sca：阻塞当前线程， 应该是主线程。
      */
     public static void simulateBlocking(long millis) {
         try {

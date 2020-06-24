@@ -19,3 +19,11 @@
     </application>
 
 </manifest>
+
+<!--
+ * StartUpApplication
+    adb shell am start -S -W com.yzl.yuanzi/com.yzl.yuanzi.GuideActivity
+
+    * adb shell am start -S -W  startup.app.speedopt/startup.app.speedopt.AppStartUpMainActivity
+
+-->
